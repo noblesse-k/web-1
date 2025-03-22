@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Services | Handyman Connection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #004a8c;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            height: 86px; /* Increased by 80% from original 48px */
+        }
+
+        .logo-container {
+            padding-left: 40px;
+        }
+
+        .logo-container img {
+            height: 60px; /* Increased logo size proportionally */
+        }
+
+        .nav {
+            flex-grow: 1;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+            padding-right: 40px;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin: 0 32px; /* Increased spacing between nav items */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; /* Increased by ~80% from 15px */
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            background-image: url('pics/logo-top.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin: 0 0 24px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 0 0 32px;
+            font-weight: 400;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 64px auto;
+            padding: 0 20px;
+        }
+
+        .main-content h2 {
+            font-size: 36px;
+            margin: 0 0 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .main-content > p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 48px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .service-card {
+            background-color: #f8f8f8;
+            padding: 24px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin: 0 0 16px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            margin: 0;
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #e31837;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c41430;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 64px;
+            padding: 48px 0;
+            background-color: #f8f8f8;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            margin: 0 0 16px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin: 0 0 32px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #004a8c;
+            color: white;
+            padding: 48px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="placeholder-logo.png" alt="Handyman Connection">
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">LOCATIONS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Professional Electrical Services</h1>
+            <p>Trust our experienced electricians for all your residential and commercial electrical needs</p>
+            <a href="#" class="cta-button">Schedule a Free Estimate</a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <h2>Expert Electrical Services</h2>
+        <p>From minor repairs to major installations, our licensed and insured electricians deliver quality workmanship and exceptional customer service for all your electrical needs.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="placeholder-outlets.jpg" alt="Outlet & Switch Installation">
+                <h3>Outlet & Switch Installation</h3>
+                <p>Professional installation of electrical outlets, switches, and GFCI protection</p>
+            </div>
+            <div class="service-card">
+                <img src="placeholder-lighting.jpg" alt="Lighting Installation">
+                <h3>Lighting Installation</h3>
+                <p>Expert installation of indoor and outdoor lighting fixtures</p>
+            </div>
+            <div class="service-card">
+                <img src="placeholder-ceiling-fans.jpg" alt="Ceiling Fan Installation">
+                <h3>Ceiling Fan Installation</h3>
+                <p>Professional mounting and wiring of ceiling fans</p>
+            </div>
+            <div class="service-card">
+                <img src="placeholder-panel.jpg" alt="Electrical Panel Services">
+                <h3>Electrical Panel Services</h3>
+                <p>Panel upgrades, repairs, and circuit breaker replacements</p>
+            </div>
+            <div class="service-card">
+                <img src="placeholder-wiring.jpg" alt="Electrical Wiring">
+                <h3>Electrical Wiring</h3>
+                <p>Complete home rewiring and new construction wiring services</p>
+            </div>
+            <div class="service-card">
+                <img src="placeholder-safety.jpg" alt="Safety Inspections">
+                <h3>Safety Inspections</h3>
+                <p>Comprehensive electrical safety inspections and troubleshooting</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today to schedule your free estimate</p>
+            <a href="#" class="cta-button">Request an Estimate</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Handyman Connection. All rights reserved.</p>
+        <p>Licensed • Bonded • Insured</p>
+        <p>Each Handyman Connection franchise is locally owned and operated</p>
+    </footer>
+</body>
+</html>
+
+
